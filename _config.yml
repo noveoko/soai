@@ -1,10 +1,10 @@
 ---
----
-
----
 title: 'SOAI: Learn. Teach. Build.'
 timezone: UTC
 collections:
+  authors:
+    title: Authors
+    output: true
   posts:
     title: Posts
     output: true
@@ -14,13 +14,19 @@ collections:
 defaults:
 - scope:
     path: ''
+    type: authors
+  values:
+    layout: author
+- scope:
+    path: ''
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
 - scope:
     path: ''
-    type: pages
   values:
-    layout: page
-permalink: pretty
+    layout: default
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
