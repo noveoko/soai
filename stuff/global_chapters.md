@@ -509,8 +509,8 @@ Social Media Accounts
 
 ### Brussels
 Social Media Accounts
-
-**No social accounts**
+[Meetup](https://www.meetup.com/School-of-AI-Brussels/)
+ 
 
 # Bangladesh
 ### Dhaka
