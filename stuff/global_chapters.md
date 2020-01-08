@@ -72,7 +72,6 @@
 [SaudiArabia](#SaudiArabia)
 [Serbia](#Serbia)
 [Singapore](#Singapore)
-[South Africa](#South Africa)
 [SouthAfrica](#SouthAfrica)
 [Spain](#Spain)
 [Sri Lanka](#Sri Lanka)
@@ -88,8 +87,6 @@
 [Turkey](#Turkey)
 [USA](#USA)
 [Uganda](#Uganda)
-[United Kingdom ](#United Kingdom )
-[United States of America](#United States of America)
 [UnitedArabEmirates](#UnitedArabEmirates)
 [UnitedKingdomofGreatBritainandNorthernIreland](#UnitedKingdomofGreatBritainandNorthernIreland)
 [UnitedStatesMinorOutlyingIslands](#UnitedStatesMinorOutlyingIslands)
@@ -224,6 +221,11 @@ Social Media Accounts
 
 [Meetup](https://www.meetup.com/Columbus-School-of-AI/)
 
+### Dallas
+Social Media Accounts
+
+**No social accounts**
+
 ### Denver
 Social Media Accounts
 
@@ -242,6 +244,11 @@ Social Media Accounts
 [Facebook](https://www.facebook.com/groups/FairfaxSchoolOfAI/)
 
 ### Frisco
+Social Media Accounts
+
+**No social accounts**
+
+### Greenville
 Social Media Accounts
 
 **No social accounts**
@@ -691,6 +698,11 @@ Social Media Accounts
 Social Media Accounts
 
 [Facebook](https://www.facebook.com/groups/1193070210849551)
+
+### Birmingham 
+Social Media Accounts
+
+**No social accounts**
 
 ### Cardiff
 Social Media Accounts
@@ -1176,6 +1188,11 @@ Social Media Accounts
 Social Media Accounts
 
 [Facebook](https://www.facebook.com/groups/350556572151196/)
+
+### Cape Town
+Social Media Accounts
+
+**No social accounts**
 
 # Kenya
 ### Eldoret
@@ -2188,17 +2205,6 @@ Social Media Accounts
 
 **No social accounts**
 
-# United States of America
-### Dallas
-Social Media Accounts
-
-**No social accounts**
-
-### Greenville
-Social Media Accounts
-
-**No social accounts**
-
 # Canada 
 ### Edmonton
 Social Media Accounts
@@ -2250,18 +2256,6 @@ Social Media Accounts
 Social Media Accounts
 
 [Facebook](https://www.facebook.com/School-of-AI-WVU-429234190954750)
-
-# United Kingdom 
-### Birmingham 
-Social Media Accounts
-
-**No social accounts**
-
-# South Africa
-### Cape Town
-Social Media Accounts
-
-**No social accounts**
 
 # Austria 
 ### Hagenberg
