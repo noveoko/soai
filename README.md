@@ -16,8 +16,12 @@ If you'd like to help us improve this website or anything about the SOAI Communi
 * data editing and modification
 * improving our documentation and other static text files
 
-We will do our best to credit all contributors. In addition, if you regularly contribute we will make an effort to promote your Github profile on:
-* Twitter
-* LinkedIn
-* Instagram
-* Facebook
+We will do our best to credit all contributors across social media
+
+## Official Social Media Channels of **SOAI**
+
+* [Twitter](https://twitter.com/SchoolOfAIOffic)
+* [LinkedIn](https://www.linkedin.com/company/school-of-ai)
+* [Instagram](https://www.instagram.com/school_of_ai/)
+* [Facebook](https://www.facebook.com/SchoolOfAIOfficial/)
+* [YouTube](https://www.youtube.com/channel/UCQ8OQiZVV5ZRGdiBe3LmITw)
