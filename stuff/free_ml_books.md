@@ -3,6 +3,8 @@ Each book includes license informaiton. Books listed here fall under various lic
 
 Additional data collected and edited by Marcin Kraszewski
 
+[121 Open Access Books](
+https://opensyllabus.org/results-list/titles?size=50&openAccess=true)
 ---
 ## Python Data Science Handbook
 
