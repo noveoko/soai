@@ -3,12 +3,13 @@
 ## Official site
 [SOAI.world](https://soai.world)
 
-Welcome to our official website code repository! :) If you are part of our community please review this site and perform a pull request if you see information that should be updated, or if you'd like to contribute code.
 
-Want to join our community?
+## Join our community
 Visit [soai.world](https://soai.world) and click on "Join our Slack!"
 
-## Join our development team (unpaid volunteers)
+
+## Improve SOAI.world one pull request at a time
+
 If you'd like to help us improve this website or anything about the SOAI Community, please consider reviewing this repo and making a pull request with your suggested changes. You are free to help us with:
 * front-end design 
 * back-end development
