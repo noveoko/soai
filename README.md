@@ -9,7 +9,7 @@ Want to join our community?
 Visit [soai.world](https://soai.world) and click on "Join our Slack!"
 
 ## Join our development team (unpaid volunteers)
-If you'd like to help us improve this website please consider reviewing our source code and making a pull request with your suggested changes. You are free to help us with:
+If you'd like to help us improve this website or anything about the SOAI Community, please consider reviewing this repo and making a pull request with your suggested changes. You are free to help us with:
 * front-end design 
 * back-end development
 * data editing and modification
