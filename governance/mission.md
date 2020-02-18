@@ -2,7 +2,7 @@
 A globally distributed community of learners, researchers, and practitioners of: Artificial Intelligence, Machine Learning, Data Science, Analytics, Robotics, Science, Technology, Art, and Design
 
 ## Mission
-[SOAI](soai.world) exists to stimulate the growth of locally-run communities focused on educating (for no fee) as many members of their community as are interested. Lectures and workshops will be given on the power and potential of technology to solve problems -- with emphasis on Machine Learning, Artificial Intelligence, Robotics, Statistics, Data Science, and Software Development.
+[SOAI](http://soai.world) exists to stimulate the growth of locally-run communities focused on educating (for no fee) as many members of their community as are interested. Lectures and workshops will be given on the power and potential of technology to solve problems -- with emphasis on Machine Learning, Artificial Intelligence, Robotics, Statistics, Data Science, and Software Development.
 
 ## Vision
 Deliver free education, high-value mentoring, and community building efforts across the planet, to stimulate the development of tight-knit collectives of skilled technologists and critical thinkers. The hope being that will develop and oversee projects to improve life on Earth by eliminating poverty, fighting climate change, reducing crime and corruption and fighting disease.
