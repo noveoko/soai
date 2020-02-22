@@ -16,6 +16,9 @@ If you'd like to help us improve this website or anything about the SOAI Communi
 * data editing and modification
 * improving our documentation and other static text files
 
+### Our Mission and Basic Guidelines
+[Doc](https://github.com/noveoko/soai/blob/master/governance/mission.md)
+
 We will do our best to credit all contributors across social media
 
 ## Official Social Media Channels of **SOAI**
