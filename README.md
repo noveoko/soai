@@ -23,8 +23,8 @@ We will do our best to credit all contributors across social media
 
 ## Official Social Media Channels of **SOAI**
 
-* [Twitter](https://twitter.com/SchoolOfAIOffic)
+* [Twitter](https://twitter.com/soaiworld)
 * [LinkedIn](https://www.linkedin.com/company/school-of-ai)
-* [Instagram](https://www.instagram.com/school_of_ai/)
+* [Instagram](https://www.instagram.com/soaiworld/)
 * [Facebook](https://www.facebook.com/SchoolOfAIOfficial/)
 * [YouTube](https://www.youtube.com/channel/UCQ8OQiZVV5ZRGdiBe3LmITw)
