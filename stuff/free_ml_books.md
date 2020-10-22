@@ -32,6 +32,9 @@ You can ask these **School of AI** members about this book: ()
 
 License: [Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)](http://i.creativecommons.org/l/by-nc/3.0/88x31.png)
 
+## Deblurring
+https://github.com/subeeshvasu/Awesome-Deblurring
+
 You can ask these **School of AI** members about this book: ()
 
 ---
