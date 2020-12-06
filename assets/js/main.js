@@ -46,6 +46,9 @@ const vm = new Vue({
     }
   },
   methods:{
+    openURL:function(url) {
+      window.open(url, '_blank');
+    },
     updateLinks:function(){
     },
     getBook:function(){

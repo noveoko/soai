@@ -54,27 +54,9 @@
         <ul>
           <li class="active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Resources</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul> -->
+          <li><a href="#services">Random</a></li>
           </li>
+          <li><a href="#apps" class="scrollto">Apps</a></li>
           <li><a href="#contact">Contact</a></li>
 
           <li class="get-started"><a href="https://soaiworld.slack.com/join/shared_invite/enQtODQxODUxNzIxNDEwLTBmMjdkMjMxNTFkYjE5ZWExMDlhZjU2ZmM4YTE0ZmM3N2YzOGMzNmE1NTAzZWRmZTk1YTdhYWUwZTIzODVmNjk#/">Join our Slack!</a></li>
@@ -89,11 +71,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">AI for People</h1>
+          <h1 data-aos="fade-up">AI for People 🌱🧍</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Our mission is to promote the understanding of Artificial Intelligence and its applications in order to raise the quality of life for everyone on Earth.</h2>
-          <div data-aos="fade-up" data-aos-delay="800">
+          <!--<div data-aos="fade-up" data-aos-delay="800">
             <a href="#about" class="btn-get-started scrollto">Take our quiz!</a>
-          </div>
+          </div>-->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -145,13 +127,13 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
+          <h2>About 🔬</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              What started out as an experiment, has now become a serious online community dedicated to the promotion of Artificial Intelligence and its benefits to society. Our <a href="https://www.linkedin.com/company/18747123/">Linkedin group</a> includes 34,000+ members around the world.
+           
+            <p>What started out as an experiment, has now become a serious online community dedicated to the promotion of Artificial Intelligence and its benefits to society. Our <a href="https://www.linkedin.com/company/18747123/">Linkedin group</a> includes 34,000+ members around the world.
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Subscribe to our newsletter</li>
@@ -163,7 +145,7 @@
             <p>
               No matter where you are in the world, no matter your educational background and abilities, you'll be able to learn everything you need to to put AI tech to use in your life, job, and community!
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <!--<a href="#" class="btn-learn-more">Learn More</a>-->
           </div>
         </div>
 
@@ -250,29 +232,30 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Free Resources</h2>
-          <p>Video, Books, and more to learn right now.</p>
+          <h2>Random 🎲</h2>
+          <p>Get inspired with random books, Youtube channels, inventions, and machine learning topics!</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Random Youtube creator</a></h4>
-              <button @click="vm.getYoutube()">Get a creator!</button>
-              <div v-if="this.youtube!=null">
-                <p>{{this.aYoutube.topic}}:<strong>{{this.aYoutube.channel}}</strong></p>
+              🎥
+              <h4 class="title"><a href="">Random Smart Youtube</a></h4>
+              <div class="alert alert-info" role="alert" v-if="this.youtube!=null">
+                <p>{{this.aYoutube.topic.toUpperCase()}} <strong>{{this.aYoutube.channel}}</strong></p>
               </div>
+              <button type="button" class="btn btn-outline-secondary" @click="vm.getYoutube()">Get a creator!</button>
               <div v-else>Click to generate</div>
             </div>
           </div>
 
           <div @click="" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Random (free to read) Book</a></h4>
-              <button @click="vm.getBook()">Get a book!</button>
-              <div v-if="this.book!=null"><p>{{this.aBook}}</p></div>
+              📕
+              <h4 class="title"><a href="">Random Free Book</a></h4>
+              <p>All these titles are free to read at <a href="https://www.gutenberg.org/">Project Gutenberg</a></p>
+              <div class="alert alert-info" role="alert" v-if="this.book!=null"><p>{{this.aBook}}</p></div>
+              <button type="button" class="btn btn-outline-secondary" @click="vm.getBook()">Get a book!</button>
               <div v-else>Click to generate</div>
               
             </div>
@@ -280,20 +263,22 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Random Machine Learning Topic</a></h4>
-              <button @click="vm.getML()">Get a topic!</button>
-              <div v-if="this.mltopic!=null"><p>{{this.aML.topic}}:<strong>{{this.aML.channel}}</strong></p></div>
+              🧮
+              <h4 class="title"><a href="">Random Machine Learning</a></h4>
+              <div class="alert alert-info" role="alert" v-if="this.mltopic!=null"><p>{{this.aML.topic}}:<strong>{{this.aML.channel}}</strong></p></div>
+              <button type="button" class="btn btn-outline-secondary" @click="vm.getML()">Get a topic!</button>
+
               <div v-else>Click to generate</div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              🥽
               <h4 class="title"><a href="">Free Invention Generator</a></h4>
-              <button @click="vm.getAppIdea()">Invent a product</button>
-              <div v-if="this.appidea!=null"><p>{{this.anAppIdea}}</p></div>
+              <div  class="alert alert-info" role="alert" v-if="this.appidea!=null"><p>{{this.anAppIdea}}</p></div>
+              <button type="button" class="btn btn-outline-secondary" @click="vm.getAppIdea()">Invent a product</button>
+
               <div v-else>Click to generate</div>
             </div>
           </div>
@@ -438,7 +423,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!--<section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -512,314 +497,30 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> End Testimonials Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
+    <section id="apps" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <h2>Apps (100% Free)</h2>
+          <p>Built using JavaScript and Vuejs</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
+
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+          <div class="btn-group" role="group" aria-label="Basic example">
+<button type="button" class="btn btn-outline-primary" @click="openURL('https://noveoko.github.io/automationwizard/')">Automation Decision Wizard 🐞</button>
+<button type="button" class="btn btn-outline-primary" @click="openURL('https://noveoko.github.io/automationwizard/')" disabled>Random All the Things 😺</button>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+</div>
         </div>
 
-      </div> -->
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Marcin Kraszewski</h4>
-                <span>Director/Developer/Writer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Your name here</h4>
-                <span>Social Media Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Your name here</h4>
-                <span>Community Outreach</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Your name here</h4>
-                <span>Researcher</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-    </section><!-- End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
+      </div>
+    </section>
+    </section>
     </section><!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
@@ -921,12 +622,13 @@
             <div class="info">
               <div>
                 <i class="ri-map-pin-line"></i>
-                <p>Warsaw, Poland</p>
+                
+                <p><strong>Headquarters</strong> Warsaw, Poland</p>
               </div>
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>info@soai.world</p>
+                <button type="button" class="btn btn-success" @click="openURL('https://us7.list-manage.com/contact-form?u=48c95b6e12ac134473b7b1b60&form_id=b4e25b077e5a6388e6c870ab339bbc65')" target="_blank">Contact form</button>
               </div>
 
               <!-- <div>
@@ -965,6 +667,7 @@
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
             <a href="#intro" class="scrollto">Home</a>
+            <a href="#apps" class="scrollto">Apps</a>
             <a href="#about" class="scrollto">About</a>
             <!-- <a href="#">Privacy Policy</a> -->
             <!-- <a href="#">Terms of Use</a> -->
