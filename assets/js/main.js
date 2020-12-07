@@ -1,12 +1,14 @@
 Vue.component('random-book',{
-template:`<div>
-A random Book!</div>`
+template:`<div>A random Book!</div>`
 
 })
 
 const vm = new Vue({
   el:"#app",
   data:{
+    info:{
+      scroll:0
+    },
     links:{
       twitter:'https://twitter.com/soaiworld',
       youtube:'https://www.youtube.com/c/SchoolofAI',
@@ -23,9 +25,24 @@ const vm = new Vue({
     appidea:null
   },
   created: function (){
-    console.log("App is powered by Vue")
+    console.log("App is powered by Vue");
+    window.addEventListener('scroll', this.updateScroll);
+    this.info.docHeight = document.body.clientHeight;
+  },
+  destroyed:function(){
+    window.removeEventListener('scroll', this.updateScroll);
   },
   computed:{
+    colorChange:function(){
+      let scrollValue = Math.floor(this.info.scroll);
+      let docHeight = this.info.docHeight;
+      let remainder = docHeight-Math.abs(scrollValue)
+      let percent = Math.floor((remainder/docHeight)*100)
+      console.log(percent)
+      if (percent >=0 && percent <=100){
+        return `color: hsl(0, 100%, ${percent}%)`
+      }else{return `color: hsl(0, 100%, 100%)`}
+    },
     getLinks:function(){
       console.log(this.extlinks)
       return this.extlinks;
@@ -46,17 +63,21 @@ const vm = new Vue({
     }
   },
   methods:{
+    updateScroll:function(){
+      this.info.scroll = document.body.getBoundingClientRect().top
+      console.log("SCROLLING...")
+    },
     openURL:function(url) {
+      console.log("Opening URL", url)
       window.open(url, '_blank');
     },
-    updateLinks:function(){
-    },
-    getBook:function(){
-      let randbook
-      try{randbook = randomBook()
-        vm.book = randbook
+    getBook:() => {
+      let randbook;
+      try {
+        randbook = randomBook();
+        vm.book = randbook;
       }
-      catch(error){console.error(error)}
+      catch (error) { console.error(error); }
     },
     getYoutube:function(){
       let yt
@@ -292,3 +313,4 @@ const vm = new Vue({
   });
 
 })(jQuery);
+

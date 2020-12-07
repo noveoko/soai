@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
@@ -41,19 +40,18 @@
 <body>
   <div id="app">
   <!-- ======= Header ======= -->
+  
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>SOAI</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="text-light"><a href="index.html"><span :style="this.colorChange">SOAI</span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#audiovidocontent">Articles/Videos</a></li>
           <li><a href="#services">Random</a></li>
           </li>
           <li><a href="#apps" class="scrollto">Apps</a></li>
@@ -61,21 +59,15 @@
 
           <li class="get-started"><a href="https://soaiworld.slack.com/join/shared_invite/enQtODQxODUxNzIxNDEwLTBmMjdkMjMxNTFkYjE5ZWExMDlhZjU2ZmM4YTE0ZmM3N2YzOGMzNmE1NTAzZWRmZTk1YTdhYWUwZTIzODVmNjk#/">Join our Slack!</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
-    
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
+  </header>
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">AI for People 🌱🧍</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Our mission is to promote the understanding of Artificial Intelligence and its applications in order to raise the quality of life for everyone on Earth.</h2>
-          <!--<div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">Take our quiz!</a>
-          </div>-->
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -83,46 +75,11 @@
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
+    </section>
 
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients clients">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-          </div>
-
-        </div>
-
-      </div> -->
-    </section><!-- End Clients Section -->
-
-    <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
@@ -137,7 +94,7 @@
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Subscribe to our newsletter</li>
-              <li><i class="ri-check-double-line"></i> Share your experience and knowledge about Artificial Intelligence.</li>
+              <li><i class="ri-check-double-line"></i> Share your experience and knowledge about Artificial Intelligence by joining our <a href="https://soaiworld.slack.com/join/shared_invite/enQtODQxODUxNzIxNDEwLTBmMjdkMjMxNTFkYjE5ZWExMDlhZjU2ZmM4YTE0ZmM3N2YzOGMzNmE1NTAzZWRmZTk1YTdhYWUwZTIzODVmNjk#/">Slack</a>.</li>
               <li><i class="ri-check-double-line"></i> Get the latest news on Artificial Intelligence and AI-related events and conferences.</li>
             </ul>
           </div>
@@ -158,7 +115,7 @@
 
         <div class="row">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-            <img src="assets/img/counts-img.png" alt="" class="img-fluid">
+           <h1>🦆</h1>
           </div>
 
           <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
@@ -168,7 +125,7 @@
                   <div class="count-box">
                     <i class="icofont-twitter"></i>
                     <span data-toggle="counter-up">{{stats.twitter}}</span>
-                    <p><strong>Twitter </strong>followers</p>
+                    <p><strong><a :href="links.twitter" >Twitter</a></strong>followers</p>
                   </div>
                 </div>
 
@@ -176,7 +133,7 @@
                   <div class="count-box">
                     <i class="icofont-instagram"></i>
                     <span data-toggle="counter-up">{{stats.instagram}}</span>
-                    <p><strong>Instagram</strong> followers</p>
+                    <p><strong><a :href="links.instagram">Instagram</a></strong> followers</p>
                   </div>
                 </div>
 
@@ -184,7 +141,7 @@
                   <div class="count-box">
                     <i class="icofont-youtube"></i>
                     <span data-toggle="counter-up">{{stats.youtube}}</span>
-                    <p><strong>YouTube</strong> subscribers</p>
+                    <p><strong><a :href="links.youtube">Youtube</a></strong> subscribers</p>
                   </div>
                 </div>
 
@@ -192,7 +149,7 @@
                   <div class="count-box">
                     <i class="icofont-linkedin"></i>
                     <span data-toggle="counter-up">{{stats.linkedin}}</span>
-                    <p><strong>Linkedin</strong> followers</p>
+                    <p><strong><a :href="links.linkedin">Linkedin</a></strong> followers</p>
                   </div>
                 </div>
 
@@ -200,7 +157,7 @@
                   <div class="count-box">
                     <i class="icofont-slack"></i>
                     <span data-toggle="counter-up">{{stats.slack}}</span>
-                    <p><strong>Slack</strong> members</p>
+                    <p><strong><a :href="links.slack">Slack</a></strong> members</p>
                   </div>
                 </div>
 
@@ -226,7 +183,32 @@
 
       </div>
     </section><!-- End Counts Section -->
+    <section id="audiovidocontent" class="audiovideocontent">
+      <div class="container">
 
+        <div class="row">
+          <div class="col-sm">
+            
+        <div class="section-title" data-aos="fade-up">
+          <h2>Original Content 💎</h2>
+          <p>Articles and Videos</p>
+        </div>
+        <h4>Articles 📃</h4>
+           <ul>
+<li><a href="https://medium.com/@marcinkraszewski/gpt-3-project-ideas-with-code-5940c275bc41">GPT-3 Project ideas with code</a> I’ve recently been granted Beta access to the GPT-3 API. As such I’ve spent the last few days diving deep into what’s possible with this amazing tool.</li>
+<li><a href="https://medium.com/@marcinkraszewski/how-to-make-the-most-from-old-ww2-footage-671123145242">How to make the most from old WW2 footage</a>Use image stacking, and other techniques to improve the quality of old,degraded images.</li>
+           </ul>
+           <h4>Videos 🎬</h4>
+           <ul>
+           <li><a href="https://www.youtube.com/watch?v=-qizU_v-oqA">GPT-3 Part 1:</a>Build 2 projects using GPT-3 in just a couple of minutes. Bare bones: branding generator, chat bot.</li>
+           <li><a href="https://www.youtube.com/watch?v=zgRc2wTiug8">GPT-3 Part 2:</a>Using my voice to chat with OpenAI's GPT-3 model</li>    
+          </ul>
+          </div>
+            </div>
+
+          </div>
+
+</section>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -289,222 +271,16 @@
     </section><!-- End Services Section -->
 
     <!-- ======= More Services Section ======= -->
-    <section id="more-services" class="more-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">YouTube:GPT-3 Part I</a></h5>
-                <p class="card-text">Build 2 projects using GPT-3 in just a couple of minutes. Bare bones: branding generator, chat bot</p>
-                <div class="read-more"><a href="https://www.youtube.com/watch?v=-qizU_v-oqA"><i class="icofont-arrow-right"></i> Watch now!</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">YouTube:GPT-3 Part II</a></h5>
-                <p class="card-text">GPT-3 Part 2: Using my voice to chat with OpenAI's GPT-3 model</p>
-                <div class="read-more"><a href="https://www.youtube.com/watch?v=zgRc2wTiug8"><i class="icofont-arrow-right"></i> Watch now!</a></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Medium: GPT-3 Project ideas with code</a></h5>
-                <p class="card-text">I’ve recently been granted Beta access to the GPT-3 API. As such I’ve spent the last few days diving deep into what’s possible with this amazing tool.</p>
-                <div class="read-more"><a href="https://medium.com/@marcinkraszewski/gpt-3-project-ideas-with-code-5940c275bc41"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Medium: How to make the most from old WW2 footage</a></h5>
-                <p class="card-text">Use image stacking, and other techniques to improve the quality of old,degraded images.</p>
-                <div class="read-more"><a href="https://medium.com/@marcinkraszewski/how-to-make-the-most-from-old-ww2-footage-671123145242"><i class="icofont-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>`
-    </section><!-- End More Services Section -->
-
-    <!-- ======= Features Section ======= -->
-    <!-- <section id="features" class="features">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Nemo Enim</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Eiusmod Tempor</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Pira Neve</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
-    </section><!-- End Features Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!--<section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Trending Terms in Data Science/AI</h2>
-          <p>Updated regularly</p>
-          <span>source:<a href="https://en.wikipedia.org/wiki/Deep_learning">Wikipedia</a></span>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Perceptron</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                In machine learning, the perceptron is an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Feature engineering</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Feature engineering is the process of using domain knowledge to extract features from raw data via data mining techniques. These features can be used to improve the performance of machine learning algorithms. Feature engineering can be considered as applied machine learning itself
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Probability</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Probability is the branch of mathematics concerning numerical descriptions of how likely an event is to occur or how likely it is that a proposition is true. 
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Lebesgue integration</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                In mathematics, the integral of a non-negative function of a single variable can be regarded, in the simplest case, as the area between the graph of that function and the x-axis.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>Feedforward neural network</h3>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                A feedforward neural network is an artificial neural network wherein connections between the nodes do not form a cycle.[1] As such, it is different from its descendant: recurrent neural networks.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
 
         </div>
 
       </div>
-    </section> End Testimonials Section -->
 
-    <!-- ======= Portfolio Section ======= -->
     <section id="apps" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Apps (100% Free)</h2>
+          <h2>Apps 💻</h2>
           <p>Built using JavaScript and Vuejs</p>
         </div>
 
@@ -513,8 +289,7 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
           <div class="btn-group" role="group" aria-label="Basic example">
 <button type="button" class="btn btn-outline-primary" @click="openURL('https://noveoko.github.io/automationwizard/')">Automation Decision Wizard 🐞</button>
-<button type="button" class="btn btn-outline-primary" @click="openURL('https://noveoko.github.io/automationwizard/')" disabled>Random All the Things 😺</button>
-
+<button type="button" class="btn btn-outline-primary" @click="openURL('')" disabled>Random All the Things 😺</button>
 </div>
         </div>
 
@@ -528,7 +303,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
+          <h2>Frequently Asked Questions 📑</h2>
         </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
@@ -599,7 +374,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2>Contact Us 📱</h2>
         </div>
 
         <div class="row">
