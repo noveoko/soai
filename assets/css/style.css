@@ -703,6 +703,14 @@ section {
   z-index: 1;
 }
 
+.quote{
+  font-style:oblique;
+}
+
+audio{
+  max-width:100%;
+}
+
 .services .icon-box::before {
   content: '';
   position: absolute;
