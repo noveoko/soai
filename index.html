@@ -56,6 +56,7 @@
           </li>
           <li><a href="#apps" class="scrollto">Apps</a></li>
           <li><a href="#links" class="scrollto">Best Links</a></li>
+          <li><a href="#podcast" class="scrollto">Podcast</a></li>
           <li><a href="#contact">Contact</a></li>
 
           <li class="get-started"><a href="https://soaiworld.slack.com/join/shared_invite/enQtODQxODUxNzIxNDEwLTBmMjdkMjMxNTFkYjE5ZWExMDlhZjU2ZmM4YTE0ZmM3N2YzOGMzNmE1NTAzZWRmZTk1YTdhYWUwZTIzODVmNjk#/">Join our Slack!</a></li>
@@ -305,11 +306,9 @@
             <h3>{{value}}
             </h3>
          <div v-for="item in external_links[value]">
-           <h4>{{item.title}}</h4>
+           <h4><a v-bind:href="item.data.site">{{item.title}}</a></h4>
            <a v-bind:href="item.data.author">Author</a>
-           <a v-bind:href="item.data.site">Website</a>
-           <a v-bind:href="item.data.free">Read it free</a>
-         </div>"
+         </div>
           </div>
         </div>
 
@@ -392,6 +391,30 @@
       </div>
     </section><!-- End F.A.Q Section -->
 
+    <section id="podcast">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Marcin Kraszewski Podcast 🎙️</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img height="300" src="podcast/art/g977.png" alt="">
+                <h2>Episodes</h2>
+                <div class="card" style="width: 18rem;">
+                    <img src="podcast/art/0001_Dan_Berte.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dan Berte</h5>
+                      <p class="card-text">A conversation with my friend from Wisconsin on his recent career change, getting into Ethereum mining, his experience getting Covid-19 3 times, and more!</p>
+                      <h6>Topics</h6>
+                      <span>Ethereum, Printing Presses, Automation</span></br>
+                      Status: <em>Post-production</em>
+                      <!--<a href="#" class="btn btn-primary">Play</a>-->
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">

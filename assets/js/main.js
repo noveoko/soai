@@ -23,9 +23,15 @@ const vm = new Vue({
     author: "https://www.linkedin.com/in/andriyburkov/?originalSubdomain=ca",
     site: "http://themlbook.com/",
     free: "http://themlbook.com/wiki/doku.php"}}],
-  "Deep Learning":[],
-  "Software Development":[],
-  "Cryptography":[]
+  "Deep Learning":[{title:"Introduction to Deep Learning",data:{
+    author: "https://mit.edu",
+    site: "http://introtodeeplearning.com/"}}],
+  "Software Development":[{title:"97 Things Every Programmer Should Know (extended)",data:{
+    author: "https://leanpub.com/u/shirishpadalkar",
+    site: "https://leanpub.com/97-Things-Every-Programmer-Should-Know-Extended"}}],
+  "Cryptography":[{title:"A Graduate Course in Applied Cryptography",data:{
+    author: "https://crypto.stanford.edu/~dabo/",
+    site: "https://toc.cryptobook.us/"}}]
   },
   stats:{twitter:7808,instagram:5211,facebook:2880,linkedin:36198,youtube:610,slack:1425,googleSearch:54},
     book:null,
