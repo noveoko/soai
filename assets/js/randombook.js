@@ -509,7 +509,7 @@ function randomYoutube(){
     let topic = keys[Math.floor(Math.random()*keys.length)]
     let topicList = youtube[topic]
     let channel = topicList[Math.floor(Math.random()*topicList.length)]
-    return {channel:channel,topic:topic}
+    return {channel:channel,topic:topic, link: `https://www.youtube.com/results?search_query=${channel}`}
 }
 
 function randomML(){

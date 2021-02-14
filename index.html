@@ -226,7 +226,7 @@
               🎥
               <h4 class="title"><a href="">Random Smart Youtube</a></h4>
               <div class="alert alert-info" role="alert" v-if="this.youtube!=null">
-                <p>{{this.aYoutube.topic.toUpperCase()}} <strong>{{this.aYoutube.channel}}</strong></p>
+                <p>{{this.aYoutube.topic.toUpperCase()}} <strong><a :href="this.aYoutube.link">{{ this.aYoutube.channel }}</a></strong></p>
               </div>
               <button type="button" class="btn btn-outline-secondary" @click="vm.getYoutube()">Get a creator!</button>
               <div v-else>Click to generate</div>
