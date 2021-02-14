@@ -51,10 +51,11 @@
         <ul>
           <li class="active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#audiovidocontent">Articles/Videos</a></li>
+          <li><a href="#audiovidocontent">Our Content</a></li>
           <li><a href="#services">Random</a></li>
           </li>
           <li><a href="#apps" class="scrollto">Apps</a></li>
+          <li><a href="#links" class="scrollto">Best Links</a></li>
           <li><a href="#contact">Contact</a></li>
 
           <li class="get-started"><a href="https://soaiworld.slack.com/join/shared_invite/enQtODQxODUxNzIxNDEwLTBmMjdkMjMxNTFkYjE5ZWExMDlhZjU2ZmM4YTE0ZmM3N2YzOGMzNmE1NTAzZWRmZTk1YTdhYWUwZTIzODVmNjk#/">Join our Slack!</a></li>
@@ -288,10 +289,32 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
           <div class="btn-group" role="group" aria-label="Basic example">
-<button @click="vm.openURL('https://noveoko.github.io/automationwizard/')" type="button" class="btn btn-outline-primary" >Automation Decision Wizard 🐞</button>
+<button @click="vm.openURL('https://noveoko.github.io/automationwizard/ ')" type="button" class="btn btn-outline-primary" >Automation Decision Wizard 🐞</button>
 <button type="button" class="btn btn-outline-primary" @click="vm.openURL('')" disabled>Random All the Things 😺</button>
 </div>
         </div>
+
+      </div>
+    </section>
+    <section id="links" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>⚡ Best Links ⚡</h2>
+          <div v-for="value in Object.keys(external_links)" :value="value">
+            <h3>{{value}}
+            </h3>
+         <div v-for="item in external_links[value]">
+           <h4>{{item.title}}</h4>
+           <a v-bind:href="item.data.author">Author</a>
+           <a v-bind:href="item.data.site">Website</a>
+           <a v-bind:href="item.data.free">Read it free</a>
+         </div>"
+          </div>
+        </div>
+
+
+
 
       </div>
     </section>

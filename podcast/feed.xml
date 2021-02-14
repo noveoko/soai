@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Marcin Kraszewski Podcast</title>
+    <googleplay:author>Marcin R. Kraszewski</googleplay:author>
+    <rawvoice:rating></rawvoice:rating>
+    <rawvoice:location>Warsaw, Poland</rawvoice:location>
+    <rawvoice:frequency>Monthly</rawvoice:frequency>
+    <author>Marcin R. Kraszewski</author>
+    <itunes:author>Marcin R. Kraszewski</itunes:author>
+    <itunes:email>visitwarsaw+podcast@gmail.com</itunes:email>
+    <itunes:category text="Technology" />
+    <image>
+      <url>http://soai.world/podcast/art/g977.png</url>
+      <title>Marcin Kraszewski Podcast</title>
+      <link>https://soai.world/podcast/</link>
+    </image>
+    <itunes:owner>
+      <itunes:name>Marcin Kraszewski</itunes:name>
+      <itunes:email>visitwarsaw@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:keywords>artificial intelligence, machine learning, coding, life, science, philosophy</itunes:keywords>
+    <copyright>Marcin R. Kraszewski 2021</copyright>
+    <description>A podcast for people that want to listen to uncluttered conversations with people under the radar</description>
+    <googleplay:image href="http://soai.world/podcast/art/g977.png" />
+    <language>en-us</language>
+    <itunes:explicit>no</itunes:explicit>
+    <pubDate>Sat, 13 Feb 2021 18:00:00 CET</pubDate>
+    <link>https://soai.world/podcast/feed.xml</link>
+    <itunes:image href="http://soai.world/podcast/art/g977.png" />
+    <item>
+      <author>Marcin Kraszewski</author>
+      <itunes:author>Marcin R. Kraszewski</itunes:author>
+      <title>Dan Berte: Mining Ethereum, Tech Trends, Covid-19</title>
+      <pubDate>Sat, 13 Feb 2021 18:00:00 CET</pubDate>
+      <enclosure url="https://soai.world/podcast/episodes/episode_1_Dan_Berte" type="audio/mpeg" length="34216300" />
+      <itunes:duration>59:08</itunes:duration>
+      <guid isPermaLink="false">cepod01</guid>
+      <itunes:explicit>no</itunes:explicit>
+      <description>
+Marcin Kraszewski - @skilenstein
+        </description>
+    </item>
+  </channel>
+</rss>

@@ -18,6 +18,15 @@ const vm = new Vue({
       instagram:'https://www.instagram.com/soaiworld/',
       slack:'http://bit.ly/2PblklZ'
   },
+  external_links:{
+"Machine Learning":[{title:"100 Page Machine Learning Book",data:{
+    author: "https://www.linkedin.com/in/andriyburkov/?originalSubdomain=ca",
+    site: "http://themlbook.com/",
+    free: "http://themlbook.com/wiki/doku.php"}}],
+  "Deep Learning":[],
+  "Software Development":[],
+  "Cryptography":[]
+  },
   stats:{twitter:7808,instagram:5211,facebook:2880,linkedin:36198,youtube:610,slack:1425,googleSearch:54},
     book:null,
     youtube:null,
