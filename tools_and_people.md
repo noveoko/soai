@@ -6,7 +6,7 @@
 
 ## Researchers
 
-[https://pacscenter.stanford.edu/person/jeff-hancock/](Jeff Hancock)
+https://pacscenter.stanford.edu/person/jeff-hancock/
 
 ## Papers
 
