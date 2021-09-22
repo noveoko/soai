@@ -7,3 +7,7 @@
 ## Researchers
 
 [https://pacscenter.stanford.edu/person/jeff-hancock/](Jeff Hancock)
+
+## Papers
+
+https://dl.acm.org/doi/abs/10.1145/2187836.2187864
