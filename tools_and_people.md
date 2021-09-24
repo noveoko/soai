@@ -1,7 +1,7 @@
 # Data
 
 ## Giant (Big) data sets
-[https://registry.opendata.aws](AWS Open Data)
+[https://registry.opendata.aws/](AWS Open Data)
 
 # Tools
 
