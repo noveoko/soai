@@ -9,7 +9,7 @@
 [https://solaris.readthedocs.io/](solaris)
 
 ## Semantic Video Search using CLIP
-[https://github.com/johanmodin/clifs](clip video search)
+[https://github.com/johanmodin/clifs/](clip video search)
 
 ## Corpus Analysis
 
