@@ -8,6 +8,9 @@
 ## Aerial Imagery + ML
 [https://solaris.readthedocs.io/](solaris)
 
+## Semantic Video Search using CLIP
+[https://github.com/johanmodin/clifs](clip video search)
+
 ## Corpus Analysis
 
 [http://ucrel.lancs.ac.uk/wmatrix/](WMatrix)
