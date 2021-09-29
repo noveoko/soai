@@ -2,6 +2,7 @@
 
 ## Giant (Big) data sets
 [https://registry.opendata.aws/](AWS Open Data)
+https://bigdata-madesimple.com/70-websites-to-get-large-data-repositories-for-free/
 
 # Tools
 
