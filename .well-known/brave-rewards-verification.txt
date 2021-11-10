@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: soai.world
+Token: e2ea7428bc41a8a23fcd7200c89535be62eb7ede788325ddad126eeefe3b7515
