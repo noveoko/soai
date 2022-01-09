@@ -30,3 +30,11 @@ https://dl.acm.org/doi/abs/10.1145/1518701.1518782
 
 https://dl.acm.org/doi/abs/10.1145/2531602.2531646
 
+# Geospatial Time Series
+
+https://ift6758.github.io/lectures/geolocation.pdf
+
+# Feature Engineering
+
+https://www.youtube.com/watch?v=vsKNxbP8R_8
+
