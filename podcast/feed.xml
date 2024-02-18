@@ -1,45 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>Marcin Kraszewski Podcast</title>
-    <googleplay:author>Marcin R. Kraszewski</googleplay:author>
-    <rawvoice:rating></rawvoice:rating>
-    <rawvoice:location>Warsaw, Poland</rawvoice:location>
-    <rawvoice:frequency>Monthly</rawvoice:frequency>
-    <author>Marcin R. Kraszewski</author>
-    <itunes:author>Marcin R. Kraszewski</itunes:author>
-    <itunes:email>visitwarsaw+podcast@gmail.com</itunes:email>
-    <itunes:category text="Technology" />
-    <image>
-      <url>http://soai.world/podcast/art/g977.png</url>
-      <title>Marcin Kraszewski Podcast</title>
-      <link>https://soai.world/podcast/</link>
-    </image>
-    <itunes:owner>
-      <itunes:name>Marcin Kraszewski</itunes:name>
-      <itunes:email>visitwarsaw@gmail.com</itunes:email>
-    </itunes:owner>
-    <itunes:keywords>artificial intelligence, machine learning, coding, life, science, philosophy</itunes:keywords>
-    <copyright>Marcin R. Kraszewski 2021</copyright>
-    <description>A podcast for people that want to listen to uncluttered conversations with people under the radar</description>
-    <googleplay:image href="http://soai.world/podcast/art/g977.png" />
+    <title>The Marcin Kraszewski Podcast</title>
+    <link>https://soai.noveoko.com</link>
+    <description>Marcin Kraszewski interviews interesting people.</description>
     <language>en-us</language>
-    <itunes:explicit>no</itunes:explicit>
-    <pubDate>Sat, 13 Feb 2021 18:00:00 CET</pubDate>
-    <link>https://soai.world/podcast/feed.xml</link>
-    <itunes:image href="http://soai.world/podcast/art/g977.png" />
+    <image>
+      <url>https://noveoko.github.io/soai/podcast/art/g977.png</url>
+      <title>The Marcin Kraszewski Podcast</title>
+      <link>https://soai.noveoko.com</link>
+    </image>
+    
+    <!-- Add more details like author, explicit content flag, etc. -->
+
     <item>
-      <author>Marcin Kraszewski</author>
-      <itunes:author>Marcin R. Kraszewski</itunes:author>
-      <title>Dan Berte: Mining Ethereum, Tech Trends, Covid-19</title>
-      <pubDate>Sat, 13 Feb 2021 18:00:00 CET</pubDate>
-      <enclosure url="https://soai.world/podcast/episodes/episode_1_Dan_Berte" type="audio/mpeg" length="34216300" />
-      <itunes:duration>59:08</itunes:duration>
-      <guid isPermaLink="false">cepod01</guid>
-      <itunes:explicit>no</itunes:explicit>
-      <description>
-Marcin Kraszewski - @skilenstein
-        </description>
+      <title>Episode 1: Dan Berte</title>
+      <description>In this episode, I chat with my friend from Wisconsin about his recent career change and his foray into Ethereum mining. We also discuss his experience contracting Covid-19 twice and more. Tune in to hear about Ethereum, printing presses, automation, and more!</description>
+      <enclosure url="https://www.yourpodcastwebsite.com/podcast/episodes/episode_1_Dan_Berte/1_dan_berte.mp3" length="123456789" type="audio/mp3" />
+      <pubDate>Wed, 18 Feb 2024 12:00:00 GMT</pubDate>
+      <itunes:duration>00=1:01:06</itunes:duration>
     </item>
+
+    <!-- Add more episode items for each episode. -->
+
   </channel>
 </rss>
